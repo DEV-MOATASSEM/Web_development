@@ -7,7 +7,7 @@ body{
 .form{
  
     margin: auto;
-    margin-top: 200px;
+    margin-top: 180px;
     width: 300px;
     text-align: center;
 }
@@ -16,19 +16,36 @@ body{
     color: white;
 }
 .heading{
+    font-family: 'Open Sans', sans-serif;
     font-size: 10px;
     color: white;
 }
-.inputs{
-    background-color: white;
+
     
-}
-.inputs input[type="email"],
-.inputs input[type="password"]
+    
+    
+
+#inputs input
+
 {
-    border: 0px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    
+    
     margin: 0px;
     padding: 0px;
     outline: none;
     width: 100%;
+    text-indent: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#inputs input[type="password"]{
+    border-top: 1px solid #ccc;
+    border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}    
+#inputs input[type="email"]{
+    border-top-left-radius: 8px;
+	border-top-right-radius: 8px;     
 }
