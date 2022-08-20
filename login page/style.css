@@ -1,5 +1,11 @@
+body{
+        background: #589ed9;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+    
+}
 .form{
-    background-color: rgb(17, 43, 43);
+ 
     margin: auto;
     margin-top: 200px;
     width: 300px;
@@ -12,4 +18,17 @@
 .heading{
     font-size: 10px;
     color: white;
+}
+.inputs{
+    background-color: white;
+    
+}
+.inputs input[type="email"],
+.inputs input[type="password"]
+{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    width: 100%;
 }
