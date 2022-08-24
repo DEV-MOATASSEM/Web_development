@@ -25,6 +25,55 @@
   
   /* Article Author Section */
   
+  
+  .article {
+    height: 280px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Article Preview Section */
+  
+  .article-preview {
+    height: 280px;
+    width: 290px;
+    background: url('https://images.unsplash.com/photo-1591843336309-cbf414ad7978?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80g');
+    background-size: cover;
+    background-position: top center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    flex: 1;
+  }
+  
+  /* Article Info Section */
+  
+  .article-info {
+    flex: 1.19;
+    background: #ffff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 40px;
+    padding-right: 35px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    position: relative;
+  }
+  
+  .article-info h1 {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .article-info p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding-right: 8px;
+  }
+  
+
   .article-author {
     display: flex;
     align-items: center;
@@ -75,56 +124,26 @@
     display: none;
   }
   
-  .article {
-    height: 280px;
-    max-width: 700px;
-    display: flex;
-    flex-direction: row;
+  @media (max-width: 767px) {
+    .article {
+        height: 580px;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+      }
+     
+      .article-preview {
+        height: 100%;
+        width: 100%;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+        
+      }
+      .article-info {
+        
+        
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
   }
-  
-  /* Article Preview Section */
-  
-  .article-preview {
-    height: 280px;
-    width: 290px;
-    background: url('https://images.unsplash.com/photo-1591843336309-cbf414ad7978?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80g');
-    background-size: cover;
-    background-position: top center;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    flex: 1;
-  }
-  
-  /* Article Info Section */
-  
-  .article-info {
-    flex: 1.19;
-    background: #ffff;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding-left: 40px;
-    padding-right: 35px;
-    padding-top: 25px;
-    padding-bottom: 30px;
-    position: relative;
-  }
-  
-  .article-info h1 {
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 15px;
-  }
-  
-  .article-info p {
-    font-size: 12px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    padding-right: 8px;
-  }
-  
-  @media only screen and (max-width: 767px) {
-   body {
-      background-image: url('https://via.placeholder.com/500');
-   }
-  
-  
